@@ -3,15 +3,16 @@ import { connect } from 'react-redux';
 import './App.css';
 
 class App extends Component {
+	
 	handleOnClick = event => {
 		this.props.increaseCount();
 	};
-
+	
 	render() {
 		return (
 			<div className="App">
 				<button onClick={this.handleOnClick}>Click</button>
-				<p>{this.props.items.length}</p>
+				<p>{this.props.items}</p>
 			</div>
 		);
 	}
